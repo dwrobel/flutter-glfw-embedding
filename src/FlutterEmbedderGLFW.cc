@@ -1,8 +1,8 @@
 
 #include <assert.h>
 #include <chrono>
-#include <embedder.h>
-#include <glfw3.h>
+#include <flutter_embedder.h>
+#include <GLFW/glfw3.h>
 #include <iostream>
 
 static_assert(FLUTTER_ENGINE_VERSION == 1, "");

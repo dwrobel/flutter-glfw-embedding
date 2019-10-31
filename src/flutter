@@ -1,0 +1,2 @@
+#!/bin/bash
+LD_LIBRARY_PATH=/home/sw/projects/flutter/dw-3/engine/src/out/linux_debug_unopt_x64 ${ENTRYPOINT} /home/sw/projects/flutter/dw-3/flutter-glfw-embedding/src/flutter.bin "$@"
