@@ -184,6 +184,11 @@ int main(int argc, const char *argv[]) {
   auto result = glfwInit();
   assert(result == GLFW_TRUE);
 
+  // Prefer EGL API
+  glfwWindowHint(GLFW_CLIENT_API, GLFW_OPENGL_ES_API);
+  // Prefer GLESv2
+  glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 2);
+
   auto window = glfwCreateWindow(kInitialWindowWidth, kInitialWindowHeight, "Flutter", NULL, NULL);
   assert(window != nullptr);
 
